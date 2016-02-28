@@ -1,0 +1,44 @@
+<!-- Player -->
+<div class="player-container">
+  <div class="main-controls">
+    <div class="previous">
+      <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>  
+    </div>
+    <div class="play">
+      <div class="icon-wrapper">
+        <span class="glyphicon glyphicon-play" aria-hidden="true" ng-hide="playing"></span>  
+        <span class="glyphicon glyphicon-pause" aria-hidden="true" ng-show="playing"></span>  
+      </div>
+    </div>
+    <div class="next">
+      <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>  
+    </div>
+  </div>
+
+  <div class="progress-bar-wrapper">
+    <div class="current-progress"><p>{{progressInTime}}s</p></div>
+
+    <div class="progress-bar-background">
+      <div class="bar-hover">
+          <div class="progress-bar-on-hover">
+            <div class="progress-bar-loaded">
+              <div class="progress-bar-change">
+
+                <div class="progress-bar-on">
+                  <div class="pointer"></div>
+                </div>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="max-progress"><p>{{duration}}s</p></div>
+  </div>
+  <div class="other-controls">
+    
+  </div>
+</div> 
+

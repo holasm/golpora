@@ -1,0 +1,119 @@
+@import "../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+$border-e3-t: 0px solid #e3e3e3;
+$border-e3 : 1px solid #e3e3e3;
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+
+.player-container{
+    width: 100%;
+
+    position: fixed;
+    height: 60px;
+    left: 50%;
+    bottom: 0px;
+    // background: #e3e3e3;
+    border: $border-e3;
+    @include transform(translateX(-50%));
+    
+    .main-controls{
+      position: relative;
+      float: left;
+      border-right: $border-e3-t;
+      width: 15.55%;
+      height: inherit;
+
+      .previous{
+        border: $border-e3-t;
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        margin-left: 13.5%;
+        // float: left;
+        @include transform(translateY(-50%));
+        text-align: center;
+        border-radius: 30px;
+
+        .glyphicon-step-backward{
+          // left: 100%;
+          // @include transform(translateX(-100%));
+          font-size: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+      }
+        
+      .play{
+        height: inherit;
+        position: absolute;
+        border: $border-e3-t;
+        width: 43%;
+        left: 50%;
+        top: 50%;
+        @include transform(translate(-50%, -50%));
+        text-align: center;
+        .icon-wrapper{
+          position: relative;
+          border: $border-e3;
+          top: 50%;
+          left: 50%;
+          width: 50px;
+          height: 50px;
+          border-radius: 100px;
+
+          @include transform(translate(-50%, -50%));
+
+          .glyphicon-play{
+            font-size: 28px;
+            top: 50%;
+            @include transform(translateY(-50%));
+          }
+
+          .glyphicon-pause{
+            font-size: 28px;
+            top: 50%;
+            @include transform(translateY(-50%));
+          }
+        }
+
+        .icon-wrapper:hover{
+          border: 1px solid #062FF9;
+        }
+        
+      }
+
+      .next{
+        border: $border-e3-t;
+        position: absolute;
+        top: 50%;
+        width: 15%;
+        right: 0;
+        margin-right: 13.5%;
+        @include transform(translateY(-50%));
+        text-align: center;
+        border-radius: 30px;
+      }
+
+        .glyphicon-step-forward{
+          // left: 100%;
+          // @include transform(translateX(-100%));
+          font-size: 16px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+    }
+    
+    .progress-bar-wrapper{
+      width: 63.77%;
+    }
+    
+    .other-controls{
+      float: left;
+      // border-right: $border-e3;
+      width: 20.68%;
+      height: inherit;
+    }
+
+}
+
+
+}//end @media

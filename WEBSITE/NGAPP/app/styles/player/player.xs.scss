@@ -2,9 +2,14 @@
 $border-e3-t: 0px solid #e3e3e3;
 $border-e3 : 1px solid #e3e3e3;
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@import "../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+$border-e3-t: 0px solid #e3e3e3;
+$border-e3 : 1px solid #e3e3e3;
+
+@media screen and (max-width: 768px) {
 
 .player-container{
+    display: none;
     width: 100%;
 
     position: fixed;
@@ -12,14 +17,14 @@ $border-e3 : 1px solid #e3e3e3;
     left: 50%;
     bottom: 0px;
     // background: #e3e3e3;
-    border: $border-e3;
+    // border: $border-e3;
     @include transform(translateX(-50%));
     
     .main-controls{
       position: relative;
       float: left;
-      border-right: $border-e3-t;
-      width: 17%;
+      border-right: $border-e3;
+      width: 15.55%;
       height: inherit;
 
       .previous{
@@ -27,7 +32,7 @@ $border-e3 : 1px solid #e3e3e3;
         position: absolute;
         top: 50%;
         width: 15%;
-        margin-left: 10%;
+        margin-left: 13.5%;
         // float: left;
         @include transform(translateY(-50%));
         text-align: center;
@@ -46,7 +51,7 @@ $border-e3 : 1px solid #e3e3e3;
         height: inherit;
         position: absolute;
         border: $border-e3-t;
-        width: 50%;
+        width: 43%;
         left: 50%;
         top: 50%;
         @include transform(translate(-50%, -50%));
@@ -59,20 +64,14 @@ $border-e3 : 1px solid #e3e3e3;
           width: 50px;
           height: 50px;
           border-radius: 100px;
-          
+
+          @include transform(translate(-50%, -50%));
 
           .glyphicon-play{
             font-size: 28px;
             top: 50%;
             @include transform(translateY(-50%));
           }
-
-          .glyphicon-pause{
-            font-size: 28px;
-            top: 50%;
-            @include transform(translateY(-50%));
-          }
-          
         }
 
         .icon-wrapper:hover{
@@ -87,7 +86,7 @@ $border-e3 : 1px solid #e3e3e3;
         top: 50%;
         width: 15%;
         right: 0;
-        margin-right: 10%;
+        margin-right: 13.5%;
         @include transform(translateY(-50%));
         text-align: center;
         border-radius: 30px;
@@ -102,14 +101,60 @@ $border-e3 : 1px solid #e3e3e3;
         }
     }
     
-    .progress-bar-wrapper{
-      width: 55%;
+/*     .progress-bar-wrapper{
+  position: relative;
+  float: left;
+  border-right: $border-e3;
+  width: 63.77%;
+  height: inherit;
+
+  .current-progress{
+    position: absolute;
+    height: 20px;
+    width: 45px;
+
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+
+  .progress-bar-background{
+    position: absolute;
+    height: 10px;
+
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    margin-left: 45px;
+    margin-right: 45px;
+    @include transform(translateY(-50%));
+
+    .progress-bar{
+
     }
+  }
+
+
+
+  .max-progress{
+    position: absolute;
+    height: 20px;
+    width: 45px;
+    left:100%;
+  
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    @include transform(translate(-100%, -50%));
+  }
+
+}//end progress-bar-wrapper */
 
     .other-controls{
       float: left;
       // border-right: $border-e3;
-      width: 28%;
+      width: 20.68%;
       height: inherit;
     }
 

@@ -1,5 +1,7 @@
 <!-- Player -->
 <div class="player-container">
+
+<div class="controls">
   <div class="main-controls">
     <div class="previous">
       <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>  
@@ -15,12 +17,26 @@
     </div>
   </div>
 
+  <div class="track_control">
+    <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>  
+    <!-- <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>   -->
+    <!-- <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>   -->
+  </div>
+
+</div>
+
   <div class="progress-bar-wrapper">
     <div class="current-progress"><p>{{progressInTime}}s</p></div>
-
+    
+    <!-- background -->
     <div class="progress-bar-background">
+      <!-- total outer boundary for hover -->
       <div class="bar-hover">
+
+          <!-- on hover shown thick bar -->
           <div class="progress-bar-on-hover">
+
+            <!-- load indication -->
             <div class="progress-bar-loaded">
               <div class="progress-bar-change">
 
@@ -37,6 +53,30 @@
 
     <div class="max-progress"><p>{{duration}}s</p></div>
   </div>
+
+  <!--  -->
+  <div class="volume-bar-wrapper">
+    
+    <div class="volume-icon-wrapper">
+      <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+    </div>
+
+    <div class="volume-bar-background">
+      <div class="volume-bar-hover">
+          <div class="volume-bar-on-hover">
+              <div class="volume-bar-change">
+
+                <div class="volume-bar-on">
+                  <div class="pointer"></div>
+                </div>
+
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--  -->
   <div class="other-controls">
     
   </div>

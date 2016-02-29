@@ -3,13 +3,27 @@
 @import "./player.sm.scss";
 @import "./player.md.scss";
 @import "./player.lg.scss";
+@import "./player.volume.scss";
+@import "./../vars.scss";
 
 $border-e3-t: 0px solid #e3e3e3;
 $border-e3 : 1px solid #e3e3e3;
 $max-progress: 60px;
 
+//contains page player
+.page-player{
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  bottom: 0;
+  height: $page-player-height;
+  border-top: 1px solid #CCCCCC;
+  z-index: 10;
+}
+
 .player-container{
-  background: #e1ede5;
+  background: #eeeeee;
+  z-index: 0;
 
   .main-controls{
     .previous{
@@ -30,6 +44,10 @@ $max-progress: 60px;
     }
 
   }
+
+  .track_control{
+    cursor: pointer;
+  }
 }//end player-container
 
 .progress-bar-wrapper{
@@ -37,7 +55,7 @@ $max-progress: 60px;
   float: left;
   border-right: $border-e3-t;
   height: inherit;
-  
+
   .current-progress{
     position: absolute;
     height: 20px;
@@ -148,3 +166,10 @@ $max-progress: 60px;
   }    
 
 }
+
+/* 
+*
+*
+*
+*/
+

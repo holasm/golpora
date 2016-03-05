@@ -1,0 +1,201 @@
+/* line 1, ../sass/preset.scss */
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 5, ../sass/md.scss */
+  .main-controls {
+    position: relative;
+    float: left;
+    width: 20%;
+    border-right: 1px solid black;
+    height: inherit;
+  }
+}
+/* line 3, ../sass/header.scss */
+header.header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 200px;
+  background-color: #a0a0a0;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* line 15, ../sass/header.scss */
+header.header .nav {
+  position: relative;
+  height: inherit;
+  width: 1280px;
+  margin: 0 auto 0;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+}
+
+/* line 3, ../sass/footer.scss */
+footer.footer {
+  position: relative;
+  width: 1280px;
+  height: 250px;
+  background: #C0C0C0;
+  margin: auto;
+}
+/* line 10, ../sass/footer.scss */
+footer.footer .useful {
+  position: relative;
+  padding: 16px;
+  width: 1280px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+/* line 18, ../sass/footer.scss */
+footer.footer .useful h2 {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+/* line 28, ../sass/footer.scss */
+footer.footer .useless {
+  width: inherit;
+  height: 50px;
+}
+
+/* line 4, ../sass/player.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, ../sass/player.scss */
+.player {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+/* line 19, ../sass/player.scss */
+.player .player-container {
+  position: relative;
+  margin: auto;
+  height: inherit;
+  width: 1280px;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+}
+
+/* line 12, ../sass/main.scss */
+body {
+  background-color: #eeeeee;
+}
+
+/* line 16, ../sass/main.scss */
+.main-container {
+  margin-top: 50px;
+  margin-bottom: 0;
+  width: 1280px;
+  margin: 0 auto 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+/* line 26, ../sass/main.scss */
+.main-container .container {
+  z-index: 10;
+  width: 780px;
+  margin: auto;
+}
+/* line 32, ../sass/main.scss */
+.main-container .container .track-container {
+  width: inherit;
+  padding-top: 75px;
+  padding-bottom: 45px;
+  overflow: hidden;
+}
+
+/* line 41, ../sass/main.scss */
+.card {
+  width: 175px;
+  background-color: #e3e3e3;
+  float: left;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 3px;
+}
+/* line 53, ../sass/main.scss */
+.card .card-title {
+  position: relative;
+  width: inherit;
+  height: 175px;
+  background-color: gray;
+  background: url("../../images/1.jpg") center/cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #e3e3e3;
+}
+/* line 64, ../sass/main.scss */
+.card .card-title .play-outer {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100px;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: border 0.3s linear;
+}
+/* line 78, ../sass/main.scss */
+.card .card-title .play-outer .play-inner {
+  position: relative;
+  height: 78px;
+  width: 78px;
+  background-color: rgba(80, 80, 80, 0.07);
+  margin: auto;
+  border-radius: 100px;
+  -webkit-transition: background-color 0.3s linear, border 0.3s linear;
+  text-align: center;
+  border: 1px solid #333333;
+}
+/* line 91, ../sass/main.scss */
+.card .card-title .play-outer .play-inner i {
+  line-height: 78px;
+  font-size: 70px;
+  color: #333333;
+}
+/* line 98, ../sass/main.scss */
+.card .card-title .play-outer .play-inner:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+  -webkit-transition: background-color .3s linear;
+}
+/* line 106, ../sass/main.scss */
+.card .card-title .play-outer:hover {
+  border: 1px solid #333333;
+  -webkit-transition: border 0.6s linear;
+}
+/* line 112, ../sass/main.scss */
+.card .supporting-item {
+  width: inherit;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+/* line 118, ../sass/main.scss */
+.card .supporting-item p {
+  padding-bottom: 16px;
+  max-width: 143px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

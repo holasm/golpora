@@ -1,0 +1,30 @@
+@import "md.scss";
+@import "variables.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// 
+.player{
+  position: fixed;
+  width: 100%;
+  height: $player-height;
+  bottom: 0;
+  border-top: $player-top-border;
+  background-color: $player-background-color;
+  // box-shadow-top:  0px -1px 2px 1px rgba(0,0,0, 0.8);
+
+  .player-container{
+    position: relative;
+    margin: auto;
+    height: inherit;
+    width: $main-container-width;
+    border-left: $test-border-left;
+    border-right: $test-border-right;
+  }
+}
+
+//
+

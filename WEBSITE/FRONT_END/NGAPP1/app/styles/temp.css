@@ -1,0 +1,15 @@
+@media screen and (min-width: 1200px) {
+.player-container{
+    // position: fixed;
+    width: 1100px;
+}
+}//end @media
+
+
+.player-container{
+    position: fixed;
+    height: 75px;
+    // left: 50%;
+    background: #e3e3e3;
+    bottom: 0;
+}

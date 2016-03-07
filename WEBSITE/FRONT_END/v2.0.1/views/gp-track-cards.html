@@ -1,0 +1,50 @@
+<div class="track-container">
+  <div class="card"  ng-repeat="track in trackList">
+
+    <!-- card title -->
+    <div class="card-title">
+      <div class="play-outer">
+        <div class="play-inner" ng-click="playPauseThisTrack($index)">
+          <!-- Icon button -->
+            <i class="material-icons play-arrow" ng-hide="track.playing">play_arrow</i>
+            <i class="material-icons play-arrow" ng-show="track.playing">pause</i>
+        </div>
+      </div>
+
+<!-- 
+      <div class="ctrl-options">
+
+  <div class="ctrls">
+    <div class="like">
+      <div class="like-icon">
+        <div class="icon-hover-boundary">
+          <i class="material-icons">favorite</i>
+        </div>
+      </div>
+      <div class="like-count">
+          <p>60k</p>
+      </div>
+    </div>
+    <div class="share">
+      <div class="share-hover-boundary">
+        <p>Share</p>
+      </div>
+    </div>
+    <div class="more-options">
+      <p> ooo </p>
+    </div>
+  </div>  
+
+</div>
+
+ -->
+
+    </div>
+    <!-- end card title -->
+
+    <div class="supporting-item">
+      <p class="track-name">{{track.title}}</p>
+      <p class="author"><span>{{track.author}}</span></p>  
+    </div>
+  </div>
+</div>

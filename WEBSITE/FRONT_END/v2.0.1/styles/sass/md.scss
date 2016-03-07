@@ -1,0 +1,14 @@
+@import "variables.scss";
+
+@media screen and (min-width: $md-min) and (max-width: $md-max) {
+  
+  .main-controls{
+    position: relative;  
+    float: left;
+    width: 20%;
+    border-right: $border-right-temp;
+    height: inherit;
+  }
+
+  
+}

@@ -1,0 +1,42 @@
+@import "preset.scss";
+@import "md.scss";
+@import "variables.scss";
+
+
+@import "header.scss";
+@import "footer.scss";
+@import "player.scss";
+@import "track-cards.scss";
+
+
+
+body{
+  background-color: $global-container-background;
+}
+
+.main-container{
+  margin-top: $header-height;
+  margin-bottom: 0;
+  width: $main-container-width;
+  margin: 0 auto 0;
+  padding: 0;
+  background-color: #e2e2e2;
+  // height: 500px;
+  // border: 2px solid green;
+  
+  .container{
+    z-index: 10;
+    width: 780px;
+    margin: auto;
+    // border: 1px solid black;
+
+    .track-container{
+      width: inherit;
+      padding-top: 75px;
+      padding-bottom: 45px;
+      overflow: hidden;
+    }
+  }
+}
+
+

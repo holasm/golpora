@@ -1,0 +1,52 @@
+$test-thick: 0px;
+
+$test-border: $test-thick solid black;
+$test-border-left: $test-thick solid black;
+$test-border-right: $test-thick solid black;
+$textimage: '../../images/2.jpg';
+
+
+$global-container-background: #eeeeee;
+$main-container-width: 1280px;
+
+$header-height: 50px;
+$player-bottom-border: 1px solid rgba(0,0,0, 0.0);
+
+//use 0px 1px 2px 1px rgba(0,0,0, 0.5);
+//when scrolled
+$header-shadow-bottom: 0px 0px 1px 1px rgba(0,0,0, 0.5);
+
+$footer-height: 200px;
+
+// track card variables
+$track-card-width: 175px;
+$track-card-radious: 3px;
+
+$player-top-border: 1px solid rgba(0,0,0, 0.1);
+$player-background-color: #fff;
+$border-right-temp: 1px solid black;
+$player-height: 50px;
+
+//screen sizes
+$xlg-max:5000px;
+$xlg-min:1200px;
+
+$lg-max:5000px;
+$lg-min:1200px;
+
+$md-max:1199px;
+$md-min:992px;
+
+$sm-max:991px;
+$sm-min:768px;
+
+$xs-max:767px;
+$xs-min:0px;
+
+// player main controls
+$xlg-pl-main-controls-width: 20%;
+$lg-pl-main-controls-width: 20%;
+$md-pl-main-controls-width: 20%;
+$sm-pl-main-controls-width: 20%;
+$xs-pl-main-controls-width: 20%;
+

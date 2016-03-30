@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+footer.footer{
+  position: relative;
+  width: $main-container-width;
+  height: $footer-height + $player-height;
+  background: #C0C0C0;
+  margin: auto;
+
+  .useful{
+    position: relative;
+    padding: 16px;
+    width: $main-container-width;
+    height: $footer-height;
+    background-color: rgba(0,0,0, 0.6);
+    text-align: center;
+
+    h2{
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      // border: 1px solid white;
+      color: white;
+    }
+  }
+
+  .useless{
+    width: inherit;
+    height: $player-height;
+  }
+}

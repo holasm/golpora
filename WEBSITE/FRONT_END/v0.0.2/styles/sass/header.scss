@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+header.header{
+  position: fixed;
+  width: 100%;
+  height: $header-height;
+  // left:0;
+  margin-bottom:200px;
+  background-color:#a0a0a0;
+  border-bottom: $player-bottom-border;
+  box-shadow: $header-shadow-bottom;
+  z-index: 1000;
+}
+
+header.header .nav{
+  position: relative;
+  height: inherit;
+  width: $main-container-width;
+  margin: 0 auto 0;
+  border-left: $test-border-left;
+  border-right: $test-border-right;
+  // left: 50%;
+}

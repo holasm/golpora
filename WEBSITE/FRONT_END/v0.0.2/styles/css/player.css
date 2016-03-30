@@ -1,0 +1,545 @@
+/* line 5, ../sass/player.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/player.scss */
+.player {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  z-index: 1000;
+}
+/* line 21, ../sass/player.scss */
+.player .player-msg {
+  position: absolute;
+  bottom: 120%;
+  left: 100px;
+  padding: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+/* line 35, ../sass/player.scss */
+.player .player-msg .arrow {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 50%;
+  transform: rotateZ(45deg) translateY(-52%);
+}
+/* line 48, ../sass/player.scss */
+.player .player-container {
+  position: relative;
+  margin: auto;
+  height: inherit;
+  width: 1280px;
+  border-left: 0px solid black;
+  border-right: 0px solid black;
+}
+/* line 56, ../sass/player.scss */
+.player .player-container .main-controls {
+  float: left;
+  position: relative;
+  margin-left: 16px;
+  width: 206px;
+  height: inherit;
+  border-right: 0px solid black;
+}
+/* line 64, ../sass/player.scss */
+.player .player-container .main-controls .previous, .player .player-container .main-controls .play, .player .player-container .main-controls .next, .player .player-container .main-controls .repeatToggle {
+  float: left;
+  position: relative;
+  width: 51px;
+  height: inherit;
+}
+/* line 74, ../sass/player.scss */
+.player .player-container .main-controls .icon-hover-boundary {
+  cursor: pointer;
+}
+/* line 78, ../sass/player.scss */
+.player .player-container .main-controls .icon-hover-boundary i {
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 83, ../sass/player.scss */
+.player .player-container .main-controls .icon-hover-boundary:hover {
+  opacity: 0.8;
+}
+/* line 87, ../sass/player.scss */
+.player .player-container .main-controls .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 93, ../sass/player.scss */
+.player .player-container .main-controls .previous, .player .player-container .main-controls .next {
+  position: relative;
+  margin: auto;
+}
+/* line 98, ../sass/player.scss */
+.player .player-container .main-controls .previous .icon-hover-boundary, .player .player-container .main-controls .next .icon-hover-boundary {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 35px;
+}
+/* line 107, ../sass/player.scss */
+.player .player-container .main-controls .previous .icon-hover-boundary i, .player .player-container .main-controls .next .icon-hover-boundary i {
+  position: relative;
+  line-height: 35px;
+  font-size: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 118, ../sass/player.scss */
+.player .player-container .main-controls .play {
+  position: relative;
+  margin: auto;
+}
+/* line 125, ../sass/player.scss */
+.player .player-container .main-controls .play .icon-hover-boundary {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 40px;
+}
+/* line 134, ../sass/player.scss */
+.player .player-container .main-controls .play .icon-hover-boundary i {
+  position: relative;
+  line-height: 40px;
+  font-size: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 144, ../sass/player.scss */
+.player .player-container .main-controls .repeatToggle {
+  position: relative;
+  margin: auto;
+}
+/* line 150, ../sass/player.scss */
+.player .player-container .main-controls .repeatToggle .icon-hover-boundary {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 35px;
+}
+/* line 159, ../sass/player.scss */
+.player .player-container .main-controls .repeatToggle .icon-hover-boundary i {
+  position: relative;
+  line-height: 35px;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 174, ../sass/player.scss */
+.player .player-container .progress-container {
+  float: left;
+  position: relative;
+  width: 596px;
+  height: inherit;
+  border: 0px solid black;
+}
+/* line 181, ../sass/player.scss */
+.player .player-container .progress-container .progress-time {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+/* line 191, ../sass/player.scss */
+.player .player-container .progress-container .progress-time span {
+  line-height: 50px;
+  font-size: 14px;
+}
+/* line 197, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 454px;
+  border-right: 0px solid black;
+  border-left: 0px solid black;
+  border-radius: 4xp;
+}
+/* line 207, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary {
+  position: relative;
+  width: inherit;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4xp;
+  cursor: pointer;
+}
+/* line 217, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper {
+  position: relative;
+  width: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 224, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick {
+  position: absolute;
+  width: inherit;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 232, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background {
+  width: inherit;
+  height: inherit;
+  background: #ececec;
+  border-radius: 4xp;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 239, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .loaded-duration {
+  position: absolute;
+  height: inherit;
+  width: 0px;
+  background: #dbdbdb;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 247, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .current-duration {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 0px;
+  background: #39dea1;
+  z-index: 4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 256, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .current-duration .pointer {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  background: #F7F5F5;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+/* line 272, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .change-duration-onhover-1 {
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: 0px;
+  background: rgba(222, 222, 222, 0.6);
+  z-index: 3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 282, ../sass/player.scss */
+.player .player-container .progress-container .progress-bar-container .progress-bar-hover-boundary .helper .on-hover-thick .progress-bar-background .change-duration-onhover-2 {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  width: 0px;
+  z-index: 1;
+  background: rgba(191, 191, 191, 0.8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 301, ../sass/player.scss */
+.player .player-container .progress-container .duration-time {
+  float: left;
+  position: absolute;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+  right: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+/* line 312, ../sass/player.scss */
+.player .player-container .progress-container .duration-time span {
+  line-height: 50px;
+  font-size: 14px;
+}
+/* line 320, ../sass/player.scss */
+.player .player-container .volume-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  margin-left: 10px;
+}
+/* line 328, ../sass/player.scss */
+.player .player-container .volume-container .volume-icon {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 51px;
+  border: 0px solid black;
+}
+/* line 337, ../sass/player.scss */
+.player .player-container .volume-container .volume-icon .icon-hover-boundary {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  cursor: pointer;
+  border: 0px solid black;
+}
+/* line 349, ../sass/player.scss */
+.player .player-container .volume-container .volume-icon .icon-hover-boundary i {
+  position: relative;
+  line-height: 40px;
+  font-size: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: text-shadow .3s ease-out;
+}
+/* line 359, ../sass/player.scss */
+.player .player-container .volume-container .volume-icon .icon-hover-boundary:hover {
+  opacity: 0.8;
+}
+/* line 363, ../sass/player.scss */
+.player .player-container .volume-container .volume-icon .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 371, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 110px;
+  border: 0px solid black;
+}
+/* line 378, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary {
+  position: relative;
+  height: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-right: 10px;
+  border: 0px solid black;
+}
+/* line 388, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper {
+  position: relative;
+  width: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 394, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick {
+  height: 4px;
+  width: inherit;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 399, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  background: rgba(219, 219, 219, 0.8);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 406, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .current-volume {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: 50px;
+  background: #39dea1;
+  z-index: 4;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 415, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .current-volume .pointer {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  background: #F7F5F5;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+/* line 431, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .change-duration-onhover-1 {
+  position: absolute;
+  left: 0;
+  height: inherit;
+  width: 0px;
+  background: rgba(222, 222, 222, 0.6);
+  z-index: 3;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 441, ../sass/player.scss */
+.player .player-container .volume-container .vol-bar-container .vol-bar-hover-boundary .helper .on-hover-thick .vol-bar-background .change-duration-onhover-2 {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  width: 0px;
+  z-index: 1;
+  background: #bfbfbf;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 459, ../sass/player.scss */
+.player .player-container .track-info {
+  float: left;
+  position: relative;
+  width: 272px;
+  height: inherit;
+  border: 0px solid black;
+  margin-left: 10px;
+}
+/* line 467, ../sass/player.scss */
+.player .player-container .track-info .track-image {
+  float: left;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: url("../../images/1.jpg") center/cover;
+}
+/* line 477, ../sass/player.scss */
+.player .player-container .track-info .track-image .icon-hover-boundary {
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+}
+/* line 483, ../sass/player.scss */
+.player .player-container .track-info .track-image .icon-hover-boundary i {
+  position: relative;
+  line-height: 40px;
+  font-size: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+  transition: text-shadow .3s ease-out;
+}
+/* line 497, ../sass/player.scss */
+.player .player-container .track-info .track-image .icon-hover-boundary:hover i {
+  text-shadow: 1px 1px 0px aquamarine, -1px 0px 0px aquamarine, 1px -1px 0px aquamarine;
+  -webkit-transition: text-shadow .3s ease-out;
+}
+/* line 504, ../sass/player.scss */
+.player .player-container .track-info .track-details {
+  float: left;
+  position: relative;
+  height: inherit;
+  width: 212px;
+  border: 0px solid black;
+  margin-left: 15px;
+}
+/* line 512, ../sass/player.scss */
+.player .player-container .track-info .track-details .track-name {
+  line-height: 25px;
+  text-align: left;
+  font-weight: bold;
+  max-width: 140px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 524, ../sass/player.scss */
+.player .player-container .track-info .track-details .track-author {
+  line-height: 20px;
+  text-align: left;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 535, ../sass/player.scss */
+.player .player-container .track-info .track-details .add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: inherit;
+  border: 0px solid black;
+}
+/* line 544, ../sass/player.scss */
+.player .player-container .track-info .track-details .add .icon-hover-boundary {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ececec;
+}
+/* line 555, ../sass/player.scss */
+.player .player-container .track-info .track-details .add .icon-hover-boundary i {
+  position: relative;
+  line-height: 30px;
+  font-size: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease-in;
+}
+/* line 566, ../sass/player.scss */
+.player .player-container .track-info .track-details .add .icon-hover-boundary:hover i {
+  color: #39dea1;
+  -webkit-transition: all 0.3s ease-out;
+  opacity: 1;
+}

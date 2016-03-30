@@ -1,0 +1,219 @@
+/* line 2, ../sass/track-cards.scss */
+.card {
+  width: 175px;
+  background-color: #e3e3e3;
+  float: left;
+  margin-left: 16px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* non-prefixed version, currently
+     not supported by any browser */
+}
+/* line 22, ../sass/track-cards.scss */
+.card .card-title {
+  position: relative;
+  width: inherit;
+  height: 175px;
+  background-color: gray;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom: 1px solid #e3e3e3;
+}
+/* line 33, ../sass/track-cards.scss */
+.card .card-title .play-outer {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 100px;
+  background-clip: border-box;
+  border: 2px solid transparent;
+  cursor: pointer;
+  -webkit-transition: border 0.3s linear;
+  z-index: 10;
+}
+/* line 48, ../sass/track-cards.scss */
+.card .card-title .play-outer .play-inner {
+  position: relative;
+  height: 76px;
+  width: 76px;
+  background-color: rgba(80, 80, 80, 0.07);
+  margin: auto;
+  border-radius: 100px;
+  -webkit-transition: background-color 0.3s linear, border 0.3s linear;
+  text-align: center;
+  border: 2px solid #1ADC94;
+}
+/* line 61, ../sass/track-cards.scss */
+.card .card-title .play-outer .play-inner i {
+  line-height: 76px;
+  font-size: 70px;
+  color: #333333;
+}
+/* line 68, ../sass/track-cards.scss */
+.card .card-title .play-outer .play-inner:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+  -webkit-transition: background-color .3s linear;
+}
+/* line 76, ../sass/track-cards.scss */
+.card .card-title .play-outer:hover {
+  border: 2px solid #1ADC94;
+  -webkit-transition: border 0.6s linear;
+}
+/* line 81, ../sass/track-cards.scss */
+.card .card-title .ctrl-options {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  width: inherit;
+  transition: background 2s linear;
+}
+/* line 89, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 98, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like {
+  float: left;
+  position: relative;
+  height: 30px;
+  width: 50%;
+  border: 0px solid black;
+}
+/* line 105, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like .like-icon {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: inherit;
+  margin-left: 10px;
+}
+/* line 112, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like .like-icon .icon-hover-boundary {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 200px;
+  background: rgba(238, 238, 238, 0.5);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px solid black;
+}
+/* line 124, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like .like-icon .icon-hover-boundary i {
+  position: relative;
+  line-height: 25px;
+  font-size: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in;
+}
+/* line 136, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like .like-count {
+  float: left;
+  right: 0;
+  height: inherit;
+  border: 0px solid black;
+  margin-left: 5px;
+}
+/* line 145, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .like .like-count p {
+  line-height: 30px;
+  text-shadow: 1px 1px 0px white;
+}
+/* line 152, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .share {
+  float: left;
+  position: relative;
+  width: 25%;
+  height: 30px;
+}
+/* line 158, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .share .share-hover-boundary {
+  position: relative;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0px solid black;
+  text-align: center;
+}
+/* line 169, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .share .share-hover-boundary p {
+  line-height: 20px;
+  text-shadow: 1px 1px 0px white;
+}
+/* line 176, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .more-options {
+  position: absolute;
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  right: 0;
+  width: 25%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 186, ../sass/track-cards.scss */
+.card .card-title .ctrl-options .ctrls .more-options p {
+  line-height: 20px;
+  cursor: pointer;
+  text-shadow: 1px 1px 0px white;
+}
+/* line 201, ../sass/track-cards.scss */
+.card .card-title:hover .ctrl-options {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0.01%, transparent);
+  transition: background 2s linear;
+}
+/* line 206, ../sass/track-cards.scss */
+.card .supporting-item {
+  width: inherit;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+/* line 213, ../sass/track-cards.scss */
+.card .supporting-item .track-name {
+  padding-bottom: 5px;
+  max-width: 143px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 222, ../sass/track-cards.scss */
+.card .supporting-item .author {
+  padding-bottom: 16px;
+  max-width: 143px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 231, ../sass/track-cards.scss */
+.card .supporting-item .author span {
+  font-size: 14px;
+}

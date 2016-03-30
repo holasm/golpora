@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Index</title>
+  <link rel="stylesheet" href="styles/css/main.css"><div class="play-inner"></div>
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      
+    </div>
+  </header>
+  <!-- end header -->
+
+
+    <div ng-view></div>
+
+
+  <!-- footer start-->
+  <footer class="footer">
+    <div class="useful">
+      <h2>Copyright ☺☻♥</h2>
+    </div>
+    <div class="useless"></div>
+  </footer>
+  <!-- footer end-->
+
+
+  
+</body>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <!-- <script src="/bower_components/angular-cookies/angular-cookies.js"></script> -->
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <!-- <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script> -->
+    <script src="/bower_components/angular-audio/app/angular.audio.js"></script>
+    <!-- <script src="/bower_components/material-design-lite/material.min.js"></script> -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/values/testTracks.js"></script>
+    
+    <script src="/scripts/services/audio.js"></script>
+    <script src="/scripts/directives/gp-player.js"></script>
+    <script src="/scripts/directives/gp-track-cards.js"></script>
+    <script src="/scripts/controllers/main.js"></script>
+    <script src="/scripts/controllers/about.js"></script>
+    <!-- <script src="/scripts/directives/golpo.js"></script> -->
+    <!-- endbuild -->
+</html>

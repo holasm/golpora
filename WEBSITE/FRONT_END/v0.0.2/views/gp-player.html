@@ -1,0 +1,134 @@
+  <!-- the player -->
+  <div class="player">
+
+<!--     <div class="player-msg">
+      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </span>
+      <div class="arrow"></div>
+    </div> -->
+
+    <div class="player-container">
+
+      <!-- main-controls contains 
+        -> previous
+        -> play
+        -> next
+        -> repeatToggle
+       -->
+      <div class="main-controls">
+        
+        <div class="previous">
+          <div class="icon-hover-boundary">
+            <i class="material-icons">skip_previous</i>
+          </div>
+        </div>
+
+        <div class="play">
+          <div class="icon-hover-boundary" ng-click="playPause()">
+            <i class="material-icons" ng-hide="playing">play_arrow</i>
+            <i class="material-icons" ng-show="playing">pause</i>
+          </div>
+        </div>
+
+        <div class="next">
+          <div class="icon-hover-boundary">
+            <i class="material-icons">skip_next</i>
+          </div>
+        </div>
+
+        <div class="repeatToggle">
+          <div class="icon-hover-boundary">
+            <i class="material-icons">3d_rotation</i>
+          </div>
+        </div>
+        
+      </div>
+      <!-- end main-controls -->
+      
+
+      <!-- progress-container continas
+      -> progress-time
+      -> progress-bar-container
+      -> duration-time
+       -->
+      <div class="progress-container">
+        <div class="progress-time"><span>{{progressInTime}}</span></div>
+        
+        <div class="progress-bar-container">
+          <div class="progress-bar-hover-boundary" ng-mousemove="showTrackChangeHint($event)" ng-mouseleave="hideTrackChangeHint()" ng-click="changeCurTrackDuration($event)">
+            <div class="helper">
+            <div class="on-hover-thick" style="height: {{progressHeight}}px">
+              <div class="progress-bar-background">
+                <div class="loaded-duration"></div>
+                
+                <div class="current-duration">
+                  <div class="pointer"></div>
+                </div>
+                <div class="change-duration-onhover-1"></div>
+                <div class="change-duration-onhover-2"></div>
+
+              </div>
+            </div>    
+            </div>
+          </div>
+        </div>
+
+        <div class="duration-time"><span>{{duration}}</span></div>
+      </div>
+      <!-- end progress-container -->
+      
+      <!-- volume-container -->
+      <div class="volume-container">
+
+        <div class="volume-icon">
+          <div class="icon-hover-boundary">
+            <i class="material-icons">volume_down</i>
+            <i class="material-icons">volume_up</i>
+            <i class="material-icons">volume_off</i>
+          </div>
+        </div>
+        
+        <!-- vol-bar-container -->
+        <div class="vol-bar-container">
+          <div class="vol-bar-hover-boundary" ng-mousemove="showVolChangeHint($event)" ng-mouseleave="hideVolChangeHint()" ng-click="changeVolume($event)">
+            <div class="helper">
+            <div class="on-hover-thick" style="height: {{volumeBarHeight}}px">
+              <div class="vol-bar-background">
+                
+                <div class="current-volume">
+                  <div class="pointer"></div>
+                </div>
+                <div class="change-duration-onhover-1"></div>
+                <div class="change-duration-onhover-2"></div>
+
+              </div>
+            </div>    
+            </div>
+          </div>
+        </div>
+        <!-- end vol-bar-container -->
+        
+      </div>
+      <!-- end volume-container -->
+
+      <!-- track-info -->
+      <div class="track-info">
+        <div class="track-image">
+          <div class="icon-hover-boundary">
+          </div>
+        </div>
+        <div class="track-details">
+          <p class="track-title">Amader asd asd sd ad.</p>
+          <p class="track-author">Saradindu OKasdf</p>
+
+          <div class="add">
+            <div class="icon-hover-boundary">
+              <i class="material-icons">favorite</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end track-info -->
+
+    </div>
+  </div>
+  <!-- end the player -->
